@@ -2,6 +2,7 @@
 #include <assert.h>
 #include "BlockAllocator.h"
 #include "KeyValuePair.h"
+#include "Utility.h"
 
 namespace StlStd
 {
@@ -280,6 +281,16 @@ namespace StlStd
 			}
 		}
 
+		void Swap(HashMap& other)
+		{
+			StlStd::Swap(m_BucketCount, other.m_BucketCount);
+			StlStd::Swap(m_Size, other.m_Size);
+			StlStd::Swap(m_pHead, other.m_pHead);
+			StlStd::Swap(m_pTail, other.m_pTail);
+			StlStd::Swap(m_pTable, other.m_pTable);
+			StlStd::Swap(m_pBlock, other.m_pBlock);
+		}
+
 		Iterator Insert(const KeyValuePair<K, V>& pair)
 		{
 			Iterator pIt = GetOrCreate_Internal(pair.Key);
@@ -352,7 +363,7 @@ namespace StlStd
 
 		Iterator Find(const K& key)
 		{
-			size_t hash = Hash(key);
+			const size_t hash = Hash(key);
 			Node* pNode = m_pTable[hash];
 			while (pNode)
 			{
@@ -365,7 +376,7 @@ namespace StlStd
 
 		ConstIterator Find(const K& key) const
 		{
-			size_t hash = Hash(key);
+			const size_t hash = Hash(key);
 			Node* pNode = m_pTable[hash];
 			while (pNode)
 			{
@@ -466,7 +477,7 @@ namespace StlStd
 		}
 
 		//Hash a key using the hash functor
-		size_t Hash(const K& key) const
+		inline size_t Hash(const K& key) const
 		{
 			return m_Hasher(key) % m_BucketCount;
 		}
@@ -532,4 +543,10 @@ namespace StlStd
 		//The hash functor
 		HashType m_Hasher;
 	};
+
+	template<typename K, typename V, typename Hasher>
+	void Swap(HashMap<K, V, Hasher>& a, HashMap<K, V, Hasher>& b)
+	{
+		a.Swap(b);
+	}
 }

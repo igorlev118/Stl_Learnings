@@ -6,7 +6,8 @@
 		<DisplayString Condition="m_Size == 0">Empty</DisplayString>
 		<DisplayString Condition="m_Size &lt; 0">Invalid</DisplayString>
 		<DisplayString Condition="Npos &lt; m_Size">Invalid</DisplayString>
-		<DisplayString Condition="m_pBuffer!=0">{m_pBuffer}</DisplayString>
+		<DisplayString Condition="m_pBuffer!=0">{m_pBuffer, s}</DisplayString>
+		<StringView>m_pBuffer, s</StringView>
 		<Expand>
 			<Item Name="String" ExcludeView="simple">m_pBuffer</Item>
 			<Item Name="[Capacity]" ExcludeView="simple">m_Capacity</Item>
@@ -56,6 +57,27 @@
 		</Expand>
 	</Type>
 	<Type Name="StlStd::HashMap&lt;*&gt;::Node">
+		<Expand>
+			<Item Name="[Key]" ExcludeView="simple">Pair.Key</Item>
+			<Item Name="[Value]" ExcludeView="simple">Pair.Value</Item>
+		</Expand>
+	</Type>
+	
+	<!--Map-->
+	<Type Name="StlStd::Map&lt;*&gt;">
+		<DisplayString Condition="m_Size == 0">Empty</DisplayString>
+		<DisplayString Condition="m_Size &lt; 0">Invalid</DisplayString>
+		<Expand>
+			<Item Name="[Size]" ExcludeView="simple">m_Size</Item>
+			<LinkedListItems>
+				<Size>m_Size</Size>
+				<HeadPointer>m_pHead</HeadPointer>
+				<NextPointer>pNext</NextPointer>
+				<ValueNode>this</ValueNode>
+			</LinkedListItems>
+		</Expand>
+	</Type>
+	<Type Name="StlStd::Map&lt;*&gt;::Node">
 		<Expand>
 			<Item Name="[Key]" ExcludeView="simple">Pair.Key</Item>
 			<Item Name="[Value]" ExcludeView="simple">Pair.Value</Item>
