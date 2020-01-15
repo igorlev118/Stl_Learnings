@@ -7,6 +7,11 @@
 		<DisplayString Condition="m_Size &lt; 0">Invalid</DisplayString>
 		<DisplayString Condition="Npos &lt; m_Size">Invalid</DisplayString>
 		<DisplayString Condition="m_pBuffer!=0">{m_pBuffer}</DisplayString>
+		<Expand>
+			<Item Name="String" ExcludeView="simple">m_pBuffer</Item>
+			<Item Name="[Capacity]" ExcludeView="simple">m_Capacity</Item>
+			<Item Name="[Size]" ExcludeView="simple">m_Size</Item>
+		</Expand>
 	</Type>
 
 	<!--Array-->
@@ -54,28 +59,6 @@
 		<Expand>
 			<Item Name="[Key]" ExcludeView="simple">Pair.Key</Item>
 			<Item Name="[Value]" ExcludeView="simple">Pair.Value</Item>
-		</Expand>
-	</Type>
-	
-	<!--SmartPtr-->
-	<Type Name="StlStd::SharedPtr&lt;*&gt;">
-		<DisplayString Condition="m_pPtr==0">Empty</DisplayString>
-		<Expand>
-			<Item Name="Ptr" ExcludeView="simple">m_pPtr</Item>
-			<Item Name="Reference" ExcludeView="simple">m_pRefCount</Item>
-		</Expand>
-	</Type>
-	<Type Name="StlStd::WeakPtr&lt;*&gt;">
-		<DisplayString Condition="m_pPtr==0">Empty</DisplayString>
-		<Expand>
-			<Item Name="Ptr" ExcludeView="simple">m_pPtr</Item>
-			<Item Name="Reference" ExcludeView="simple">m_pRefCount</Item>
-		</Expand>
-	</Type>
-	<Type Name="StlStd::UniquePtr&lt;*&gt;">
-		<DisplayString Condition="m_pPtr==0">Empty</DisplayString>
-		<Expand>
-			<Item Name="Ptr" ExcludeView="simple">m_pPtr</Item>
 		</Expand>
 	</Type>
 
