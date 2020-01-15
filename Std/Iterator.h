@@ -101,7 +101,7 @@ namespace StlStd
 
 		RandomAccessConstIterator& operator++()
 		{
-			--pPtr;
+			++pPtr;
 			return *this;
 		}
 

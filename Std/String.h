@@ -1,9 +1,9 @@
 #pragma once
 #include <assert.h>
 #include <iostream>
-#include "Casting.h"
 #include "Iterator.h"
 #include "Algorithm.h"
+#include "Utility.h"
 
 namespace StlStd
 {
@@ -535,4 +535,10 @@ namespace StlStd
 		size_t m_Size;
 		size_t m_Capacity;
 	};
+
+	template<>
+	void Swap(String& a, String& b)
+	{
+		a.StringSwap(b);
+	}
 }
