@@ -147,7 +147,7 @@ namespace StlStd
 		Node* pNode;
 	};
 
-	template<typename K, typename V, typename HashType = std::hash<K>>
+	template<typename K, typename V, typename HashType = std::hash<K>, typename KeyEqual = StlStd::EqualTo<K>>
 	class HashMap
 	{
 	public:
@@ -313,9 +313,10 @@ namespace StlStd
 				return Iterator(m_pTail);
 			Node* pUp = nullptr;
 			Node* pNext = pNode->pNext;
+			KeyEqual equal;
 			while (pNode != nullptr)
 			{
-				if (key == pNode->Pair.Key)
+				if (equal(key, pNode->Pair.Key))
 				{
 					if (pUp)
 					{
@@ -365,9 +366,10 @@ namespace StlStd
 		{
 			const size_t hash = Hash(key);
 			Node* pNode = m_pTable[hash];
+			KeyEqual equal;
 			while (pNode)
 			{
-				if (pNode->Pair.Key == key)
+				if (equal(pNode->Pair.Key, key))
 					return Iterator(pNode);
 				pNode = pNode->pDown;
 			}
@@ -378,9 +380,10 @@ namespace StlStd
 		{
 			const size_t hash = Hash(key);
 			Node* pNode = m_pTable[hash];
+			KeyEqual equal;
 			while (pNode)
 			{
-				if (pNode->Pair.Key == key)
+				if (equal(pNode->Pair.Key, key))
 					return ConstIterator(pNode);
 				pNode = pNode->pDown;
 			}
