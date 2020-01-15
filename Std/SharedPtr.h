@@ -1,5 +1,4 @@
 #pragma once
-#include "Casting.h"
 #include <atomic>
 
 namespace StlStd
@@ -10,8 +9,10 @@ namespace StlStd
 		ThreadSafe,
 	};
 
-	template<class T, SharedPtrType Mode = SharedPtrType::NonThreadSafe> class SharedPtr;
-	template<class T, SharedPtrType Mode = SharedPtrType::NonThreadSafe> class WeakPtr;
+	template<class T, SharedPtrType Mode = SharedPtrType::NonThreadSafe> 
+	class SharedPtr;
+	template<class T, SharedPtrType Mode = SharedPtrType::NonThreadSafe> 
+	class WeakPtr;
 
 	template<SharedPtrType type>
 	struct RefCount;
