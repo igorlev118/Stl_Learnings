@@ -311,7 +311,7 @@ namespace StlStd
 	};
 
 	template<typename T>
-	void Swap(Vector<T>& a, Vector<T>& b)
+	inline void Swap(Vector<T>& a, Vector<T>& b)
 	{
 		a.Swap(b);
 	}

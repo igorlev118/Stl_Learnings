@@ -4,6 +4,7 @@
 #include "Iterator.h"
 #include "Algorithm.h"
 #include "Utility.h"
+#include "Hash.h"
 
 namespace StlStd
 {
@@ -260,11 +261,11 @@ namespace StlStd
 			return value;
 		}
 
-		void StringSwap(String& other)
+		void Swap(String& other)
 		{
-			Swap(m_pBuffer, other.m_pBuffer);
-			Swap(m_Size, other.m_Size);
-			Swap(m_Capacity, other.m_Capacity);
+			StlStd::Swap(m_pBuffer, other.m_pBuffer);
+			StlStd::Swap(m_Size, other.m_Size);
+			StlStd::Swap(m_Capacity, other.m_Capacity);
 		}
 
 		void Assign(const size_t amount, const char value)
@@ -486,6 +487,15 @@ namespace StlStd
 			return String::Npos;
 		}
 
+		size_t GetHash() const
+		{
+			return FNV1aHash(m_pBuffer, m_Size);
+		}
+		struct Hash
+		{
+			size_t operator()(const String& other) const { return other.GetHash(); }
+		};
+
 		template<typename ...Args>
 		static String Printf(const char* format, Args... args)
 		{
@@ -542,8 +552,8 @@ namespace StlStd
 	};
 
 	template<>
-	void Swap(String& a, String& b)
+	inline void Swap(String& a, String& b)
 	{
-		a.StringSwap(b);
+		a.Swap(b);
 	}
 }

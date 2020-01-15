@@ -3,7 +3,7 @@
 namespace StlStd
 {
 	template<typename T>
-	void Swap(T& first, T& second)
+	inline void Swap(T& first, T& second)
 	{
 		T temp = first;
 		first = second;
