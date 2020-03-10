@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<Project>
+
+    <Group name="resource">
+
+        <File name="murl_resource_condition.h"/>
+
+        <File name="murl_resource_i_animation.h"/>
+        <File name="murl_resource_i_archive.h"/>
+        <File name="murl_resource_i_atlas.h"/>
+        <File name="murl_resource_i_audio.h"/>
+        <File name="murl_resource_i_binary.h"/>
+        <File name="murl_resource_i_collection.h"/>
+        <File name="murl_resource_i_collection_factory.h"/>
+        <File name="murl_resource_i_collection_factory_registry.h"/>
+        <File name="murl_resource_i_condition.h"/>
+        <File name="murl_resource_i_dictionary.h"/>
+        <File name="murl_resource_i_factory.h"/>
+        <File name="murl_resource_i_factory_registry.h"/>
+        <File name="murl_resource_i_font.h"/>
+        <File name="murl_resource_i_graph.h"/>
+        <File name="murl_resource_i_graph_node.h"/>
+        <File name="murl_resource_i_grid.h"/>
+        <File name="murl_resource_i_image.h"/>
+        <File name="murl_resource_i_instance.h"/>
+        <File name="murl_resource_i_mesh.h"/>
+        <File name="murl_resource_i_object.h"/>
+        <File name="murl_resource_i_object_factory.h"/>
+        <File name="murl_resource_i_object_factory_registry.h"/>
+        <File name="murl_resource_i_outline.h"/>
+        <File name="murl_resource_i_package.h"/>
+        <File name="murl_resource_i_package_factory.h"/>
+        <File name="murl_resource_i_package_factory_registry.h"/>
+        <File name="murl_resource_i_rectangle.h"/>
+        <File name="murl_resource_i_script.h"/>
+        <File name="murl_resource_i_shader.h"/>
+        <File name="murl_resource_i_text.h"/>
+        <File name="murl_resource_i_video.h"/>
+
+        <File name="murl_resource_object.h"/>
+        <File name="murl_resource_property.h"/>
+        <File name="murl_resource_types.h"/>
+
+    </Group>
+
+</Project>
