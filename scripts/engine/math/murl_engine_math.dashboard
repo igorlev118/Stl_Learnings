@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<Project>
+
+    <Group name="math">
+
+        <File name="murl_math.h"/>
+        <File name="murl_math_big_integer.h"/>
+        <File name="murl_math_box.h"/>
+        <File name="murl_math_cone.h"/>
+        <File name="murl_math_cylinder.h"/>
+        <File name="murl_math_easing.h"/>
+        <File name="murl_math_frustum.h"/>
+        <File name="murl_math_interpolation.h"/>
+        <File name="murl_math_limits.h"/>
+        <File name="murl_math_matrix.h"/>
+        <File name="murl_math_min_max.h"/>
+        <File name="murl_math_plane.h"/>
+        <File name="murl_math_quaternion.h"/>
+        <File name="murl_math_ray.h"/>
+        <File name="murl_math_rectangle.h"/>
+        <File name="murl_math_sphere.h"/>
+        <File name="murl_math_spline_base.h"/>
+        <File name="murl_math_spline_bezier.h"/>
+        <File name="murl_math_spline_hermite.h"/>
+        <File name="murl_math_types.h"/>
+        <File name="murl_math_vector.h"/>
+
+    </Group>
+
+</Project>

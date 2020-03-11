@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<Project>
+
+    <Group name="output">
+
+        <File name="murl_output_i_device_handler.h"/>
+        <File name="murl_output_i_factory.h"/>
+        <File name="murl_output_types.h"/>
+
+    </Group>
+    
+</Project>

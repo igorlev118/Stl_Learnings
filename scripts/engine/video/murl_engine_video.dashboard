@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<Project>
+
+    <Group name="video">
+
+        <File name="murl_video_dx111_handle.h"/>
+        <File name="murl_video_dx111_state.h"/>
+        <File name="murl_video_dx90_handle.h"/>
+        <File name="murl_video_dx90_state.h"/>
+        <File name="murl_video_gles20_handle.h"/>
+        <File name="murl_video_gles20_state.h"/>
+        <File name="murl_video_gles30_state.h"/>
+        <File name="murl_video_i_attribute.h"/>
+        <File name="murl_video_i_batch.h"/>
+        <File name="murl_video_i_bone.h"/>
+        <File name="murl_video_i_camera.h"/>
+        <File name="murl_video_i_constant_buffer.h"/>
+        <File name="murl_video_i_constants.h"/>
+        <File name="murl_video_i_drawable.h"/>
+        <File name="murl_video_i_factory.h"/>
+        <File name="murl_video_i_factory_registry.h"/>
+        <File name="murl_video_i_fixed_technique.h"/>
+        <File name="murl_video_i_frame_buffer.h"/>
+        <File name="murl_video_i_index_buffer.h"/>
+        <File name="murl_video_i_indices.h"/>
+        <File name="murl_video_i_light.h"/>
+        <File name="murl_video_i_material.h"/>
+        <File name="murl_video_i_object.h"/>
+        <File name="murl_video_i_program.h"/>
+        <File name="murl_video_i_renderer.h"/>
+        <File name="murl_video_i_renderer_registry.h"/>
+        <File name="murl_video_i_shader.h"/>
+        <File name="murl_video_i_shader_technique.h"/>
+        <File name="murl_video_i_texture.h"/>
+        <File name="murl_video_i_uniform.h"/>
+        <File name="murl_video_i_vertex_buffer.h"/>
+        <File name="murl_video_i_vertices.h"/>
+        <File name="murl_video_i_view.h"/>
+        <File name="murl_video_object.h"/>
+        <File name="murl_video_state.h"/>
+        <File name="murl_video_types.h"/>
+        
+    </Group>
+    
+</Project>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<Project>
+
+    <Group name="input">
+
+        <File name="murl_input_i_accelerometer_device.h"/>
+        <File name="murl_input_i_device.h"/>
+        <File name="murl_input_i_device_handler.h"/>
+        <File name="murl_input_i_factory.h"/>
+        <File name="murl_input_i_game_controller_device.h"/>
+        <File name="murl_input_i_gyroscope_device.h"/>
+        <File name="murl_input_i_heading_device.h"/>
+        <File name="murl_input_i_keyboard_device.h"/>
+        <File name="murl_input_i_location_device.h"/>
+        <File name="murl_input_i_motion_device.h"/>
+        <File name="murl_input_i_mouse_buttons.h"/>
+        <File name="murl_input_i_mouse_device.h"/>
+        <File name="murl_input_i_orientation_device.h"/>
+        <File name="murl_input_i_plane.h"/>
+        <File name="murl_input_i_projection.h"/>
+        <File name="murl_input_i_raw_button_device.h"/>
+        <File name="murl_input_i_raw_keyboard_device.h"/>
+        <File name="murl_input_i_raw_mouse_device.h"/>
+        <File name="murl_input_i_screen_area.h"/>
+        <File name="murl_input_i_touch_area.h"/>
+        <File name="murl_input_i_touch_screen_device.h"/>
+        <File name="murl_input_i_touchable_handler.h"/>
+        <File name="murl_input_types.h"/>
+
+    </Group>
+
+</Project>

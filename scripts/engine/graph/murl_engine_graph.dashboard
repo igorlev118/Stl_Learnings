@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+
+<Project>
+
+    <Group name="graph">
+
+        <Group name="controllers">
+            <File name="murl_graph_controller.h"/>
+            <File name="murl_graph_i_animation_time_controller.h"/>
+            <File name="murl_graph_i_controller.h"/>
+            <File name="murl_graph_i_link_controller.h"/>
+            <File name="murl_graph_i_logic_controller.h"/>
+            <File name="murl_graph_i_node_link_controller.h"/>
+            <File name="murl_graph_i_script_logic_controller.h"/>
+            <File name="murl_graph_i_time_controller.h"/>
+            <File name="murl_graph_i_timeline_variable_controller.h"/>
+            <File name="murl_graph_i_uniform_time_controller.h"/>
+            <File name="murl_graph_i_variable_controller.h"/>
+            <File name="murl_graph_i_wave_uniform_time_controller.h"/>
+            <File name="murl_graph_link_controller.h"/>
+            <File name="murl_graph_time_controller.h"/>
+            <File name="murl_graph_variable_controller.h"/>
+        </Group>
+
+        <Group name="evaluators">
+            <File name="murl_graph_i_time_evaluator.h"/>
+        </Group>
+
+        <Group name="misc">
+            <File name="murl_graph_i_bounding_volume.h"/>
+            <File name="murl_graph_i_handle.h"/>
+            <File name="murl_graph_i_handle_instance.h"/>
+            <File name="murl_graph_i_multi_touchable.h"/>
+            <File name="murl_graph_i_touchable.h"/>
+            <File name="murl_graph_i_touchable_target.h"/>
+            <File name="murl_graph_property.h"/>
+        </Group>
+
+        <Group name="nodes">
+            <!-- A -->
+            <File name="murl_graph_i_aligner.h"/>
+            <File name="murl_graph_i_anchor.h"/>
+            <File name="murl_graph_i_anchor_state.h"/>
+            <File name="murl_graph_i_anchor_state_copy.h"/>
+            <File name="murl_graph_i_audio_sequence.h"/>
+            <File name="murl_graph_i_audio_source.h"/>
+
+            <!-- B -->
+            <File name="murl_graph_i_ball_joint.h"/>
+            <File name="murl_graph_i_body.h"/>
+            <File name="murl_graph_i_bone.h"/>
+            <File name="murl_graph_i_bone_state.h"/>
+            <File name="murl_graph_i_bone_state_copy.h"/>
+            <File name="murl_graph_i_bounding_box.h"/>
+            <File name="murl_graph_i_button.h"/>
+
+            <!-- C -->
+            <File name="murl_graph_i_camera.h"/>
+            <File name="murl_graph_i_camera_state.h"/>
+            <File name="murl_graph_i_camera_state_copy.h"/>
+            <File name="murl_graph_i_camera_transform.h"/>
+            <File name="murl_graph_i_clip.h"/>
+            <File name="murl_graph_i_clip_sequencer.h"/>
+            <File name="murl_graph_i_clip_transition.h"/>
+            <File name="murl_graph_i_clone_transform.h"/>
+            <File name="murl_graph_i_collider.h"/>
+            <File name="murl_graph_i_contact.h"/>
+            <File name="murl_graph_i_cube_collider.h"/>
+            <File name="murl_graph_i_cube_geometry.h"/>
+            <File name="murl_graph_i_culler.h"/>
+            <File name="murl_graph_i_culler_state.h"/>
+            <File name="murl_graph_i_culler_state_copy.h"/>
+
+            <!-- F -->
+            <File name="murl_graph_i_field.h"/>
+            <File name="murl_graph_i_fixed_parameters.h"/>
+            <File name="murl_graph_i_fixed_program.h"/>
+            <File name="murl_graph_i_frame_buffer.h"/>
+
+            <!-- G -->
+            <File name="murl_graph_i_generic_geometry.h"/>
+            <File name="murl_graph_i_generic_parameter.h"/>
+            <File name="murl_graph_i_generic_parameter_group.h"/>
+            <File name="murl_graph_i_generic_parameters.h"/>
+
+            <!-- H -->
+            <File name="murl_graph_i_height_field.h"/>
+            <File name="murl_graph_i_hinge_joint.h"/>
+
+            <!-- I -->
+            <File name="murl_graph_i_instance.h"/>
+            <File name="murl_graph_i_island.h"/>
+            <File name="murl_graph_i_island_state.h"/>
+            <File name="murl_graph_i_island_state_copy.h"/>
+
+            <!-- J -->
+            <File name="murl_graph_i_joint.h"/>
+
+            <!-- L -->
+            <File name="murl_graph_i_layer_state.h"/>
+            <File name="murl_graph_i_light.h"/>
+            <File name="murl_graph_i_light_state.h"/>
+            <File name="murl_graph_i_light_state_copy.h"/>
+            <File name="murl_graph_i_light_transform.h"/>
+            <File name="murl_graph_i_listener.h"/>
+            <File name="murl_graph_i_listener_state.h"/>
+            <File name="murl_graph_i_listener_state_copy.h"/>
+            <File name="murl_graph_i_listener_transform.h"/>
+
+            <!-- M -->
+            <File name="murl_graph_i_material.h"/>
+            <File name="murl_graph_i_material_state.h"/>
+            <File name="murl_graph_i_material_state_copy.h"/>
+
+            <!-- N -->
+            <File name="murl_graph_i_namespace.h"/>
+            <File name="murl_graph_i_nine_patch_plane_geometry.h"/>
+            <File name="murl_graph_i_nine_patch_plane_sequence_geometry.h"/>
+            <File name="murl_graph_i_node.h"/>
+
+            <!-- P -->
+            <File name="murl_graph_i_parameters.h"/>
+            <File name="murl_graph_i_parameters_state.h"/>
+            <File name="murl_graph_i_parameters_state_copy.h"/>
+            <File name="murl_graph_i_plane_collider.h"/>
+            <File name="murl_graph_i_plane_geometry.h"/>
+            <File name="murl_graph_i_plane_sequence_geometry.h"/>
+            <File name="murl_graph_i_program.h"/>
+
+            <!-- R -->
+            <File name="murl_graph_i_reference.h"/>
+            <File name="murl_graph_i_reset_transform.h"/>
+            <File name="murl_graph_i_resource_mesh_collider.h"/>
+            <File name="murl_graph_i_resource_mesh_culler.h"/>
+            <File name="murl_graph_i_resource_mesh_geometry.h"/>
+            <File name="murl_graph_i_resource_shadow_geometry.h"/>
+
+            <!-- S -->
+            <File name="murl_graph_i_scale.h"/>
+            <File name="murl_graph_i_shader.h"/>
+            <File name="murl_graph_i_shader_program.h"/>
+            <File name="murl_graph_i_shadow_camera.h"/>
+            <File name="murl_graph_i_sphere_collider.h"/>
+            <File name="murl_graph_i_spring.h"/>
+            <File name="murl_graph_i_sub_state.h"/>
+            <File name="murl_graph_i_subject.h"/>
+            <File name="murl_graph_i_surface.h"/>
+            <File name="murl_graph_i_surface_state.h"/>
+            <File name="murl_graph_i_surface_state_copy.h"/>
+            <File name="murl_graph_i_switch.h"/>
+
+            <!-- T -->
+            <File name="murl_graph_i_template.h"/>
+            <File name="murl_graph_i_text_geometry.h"/>
+            <File name="murl_graph_i_text_texture.h"/>
+            <File name="murl_graph_i_texture.h"/>
+            <File name="murl_graph_i_texture_state.h"/>
+            <File name="murl_graph_i_texture_state_copy.h"/>
+            <File name="murl_graph_i_timeline.h"/>
+            <File name="murl_graph_i_timeline_state.h"/>
+            <File name="murl_graph_i_timeline_state_copy.h"/>
+            <File name="murl_graph_i_transform.h"/>
+
+            <!-- V -->
+            <File name="murl_graph_i_variable.h"/>
+            <File name="murl_graph_i_video_sequence.h"/>
+            <File name="murl_graph_i_video_source.h"/>
+            <File name="murl_graph_i_view.h"/>
+
+            <!-- class -->
+            <File name="murl_graph_node.h"/>
+            <File name="murl_graph_transform.h"/>
+        </Group>
+
+        <Group name="properties">
+            <File name="murl_graph_i_attribute.h"/>
+            <File name="murl_graph_i_attribute_container.h"/>
+            <File name="murl_graph_i_audible.h"/>
+            <File name="murl_graph_i_blendable.h"/>
+            <File name="murl_graph_i_collidable.h"/>
+            <File name="murl_graph_i_colored.h"/>
+            <File name="murl_graph_i_constant_buffer.h"/>
+            <File name="murl_graph_i_constant_buffer_container.h"/>
+            <File name="murl_graph_i_drawable.h"/>
+            <File name="murl_graph_i_drawable_container.h"/>
+            <File name="murl_graph_i_index_buffer.h"/>
+            <File name="murl_graph_i_index_buffer_container.h"/>
+            <File name="murl_graph_i_indexed.h"/>
+            <File name="murl_graph_i_nine_patch.h"/>
+            <File name="murl_graph_i_playable.h"/>
+            <File name="murl_graph_i_scalable.h"/>
+            <File name="murl_graph_i_state_slot.h"/>
+            <File name="murl_graph_i_state_unit.h"/>
+            <File name="murl_graph_i_text.h"/>
+            <File name="murl_graph_i_transformable.h"/>
+            <File name="murl_graph_i_traversable.h"/>
+            <File name="murl_graph_i_uniform.h"/>
+            <File name="murl_graph_i_uniform_container.h"/>
+            <File name="murl_graph_i_vertex_buffer.h"/>
+            <File name="murl_graph_i_vertex_buffer_container.h"/>
+            <File name="murl_graph_i_visible.h"/>
+        </Group>
+
+        <Group name="targets">
+            <File name="murl_graph_generic_node_target.h"/>
+            <File name="murl_graph_generic_resource_target.h"/>
+            <File name="murl_graph_i_generic_node_target.h"/>
+            <File name="murl_graph_i_generic_resource_target.h"/>
+            <File name="murl_graph_node_array_target.h"/>
+            <File name="murl_graph_node_target.h"/>
+            <File name="murl_graph_resource_array_target.h"/>
+            <File name="murl_graph_resource_target.h"/>
+        </Group>
+
+        <Group name="trackers">
+            <File name="murl_graph_i_config_changed_tracker.h"/>
+            <File name="murl_graph_i_de_init_tracker.h"/>
+            <File name="murl_graph_i_deserialize_attribute_tracker.h"/>
+            <File name="murl_graph_i_finish_input_tracker.h"/>
+            <File name="murl_graph_i_finish_logic_tracker.h"/>
+            <File name="murl_graph_i_finish_output_tracker.h"/>
+            <File name="murl_graph_i_init_tracker.h"/>
+            <File name="murl_graph_i_process_input_tracker.h"/>
+            <File name="murl_graph_i_process_logic_tracker.h"/>
+            <File name="murl_graph_i_process_output_tracker.h"/>
+            <File name="murl_graph_i_tracker.h"/>
+            <File name="murl_graph_i_tracker_result.h"/>
+            <File name="murl_graph_tracker_result.h"/>
+        </Group>
+
+        <File name="murl_graph_i_factory.h"/>
+        <File name="murl_graph_i_factory_registry.h"/>
+        <File name="murl_graph_i_root.h"/>
+        <File name="murl_graph_types.h"/>
+
+    </Group>
+    
+</Project>

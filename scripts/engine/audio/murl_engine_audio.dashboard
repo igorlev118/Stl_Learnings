@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<Project>
+
+    <Group name="audio">
+
+        <Group name="al11">
+            <File name="murl_audio_al11_handle.h"/>
+            <File name="murl_audio_al11_state.h"/>
+        </Group>
+
+        <Group name="dummy">
+            <File name="murl_audio_dummy_handle.h"/>
+            <File name="murl_audio_dummy_state.h"/>
+        </Group>
+
+        <File name="murl_audio_i_buffer.h"/>
+        <File name="murl_audio_i_factory.h"/>
+        <File name="murl_audio_i_factory_registry.h"/>
+        <File name="murl_audio_i_listener.h"/>
+        <File name="murl_audio_i_object.h"/>
+        <File name="murl_audio_i_playable.h"/>
+        <File name="murl_audio_i_renderer.h"/>
+        <File name="murl_audio_i_renderer_registry.h"/>
+        <File name="murl_audio_i_view.h"/>
+        <File name="murl_audio_object.h"/>
+        <File name="murl_audio_state.h"/>
+        <File name="murl_audio_types.h"/>
+        
+    </Group>
+    
+</Project>
